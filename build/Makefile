@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named matrix_transform
+# Target rules for targets named HowFeaturesWork
 
 # Build rule for target.
-matrix_transform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 matrix_transform
-.PHONY : matrix_transform
+HowFeaturesWork: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HowFeaturesWork
+.PHONY : HowFeaturesWork
 
 # fast build rule for target.
-matrix_transform/fast:
-	$(MAKE) -f CMakeFiles/matrix_transform.dir/build.make CMakeFiles/matrix_transform.dir/build
-.PHONY : matrix_transform/fast
+HowFeaturesWork/fast:
+	$(MAKE) -f CMakeFiles/HowFeaturesWork.dir/build.make CMakeFiles/HowFeaturesWork.dir/build
+.PHONY : HowFeaturesWork/fast
 
-src/matrix_transform.o: src/matrix_transform.cpp.o
+src/HowFeaturesWork.o: src/HowFeaturesWork.cpp.o
 
-.PHONY : src/matrix_transform.o
+.PHONY : src/HowFeaturesWork.o
 
 # target to build an object file
-src/matrix_transform.cpp.o:
-	$(MAKE) -f CMakeFiles/matrix_transform.dir/build.make CMakeFiles/matrix_transform.dir/src/matrix_transform.cpp.o
-.PHONY : src/matrix_transform.cpp.o
+src/HowFeaturesWork.cpp.o:
+	$(MAKE) -f CMakeFiles/HowFeaturesWork.dir/build.make CMakeFiles/HowFeaturesWork.dir/src/HowFeaturesWork.cpp.o
+.PHONY : src/HowFeaturesWork.cpp.o
 
-src/matrix_transform.i: src/matrix_transform.cpp.i
+src/HowFeaturesWork.i: src/HowFeaturesWork.cpp.i
 
-.PHONY : src/matrix_transform.i
+.PHONY : src/HowFeaturesWork.i
 
 # target to preprocess a source file
-src/matrix_transform.cpp.i:
-	$(MAKE) -f CMakeFiles/matrix_transform.dir/build.make CMakeFiles/matrix_transform.dir/src/matrix_transform.cpp.i
-.PHONY : src/matrix_transform.cpp.i
+src/HowFeaturesWork.cpp.i:
+	$(MAKE) -f CMakeFiles/HowFeaturesWork.dir/build.make CMakeFiles/HowFeaturesWork.dir/src/HowFeaturesWork.cpp.i
+.PHONY : src/HowFeaturesWork.cpp.i
 
-src/matrix_transform.s: src/matrix_transform.cpp.s
+src/HowFeaturesWork.s: src/HowFeaturesWork.cpp.s
 
-.PHONY : src/matrix_transform.s
+.PHONY : src/HowFeaturesWork.s
 
 # target to generate assembly for a file
-src/matrix_transform.cpp.s:
-	$(MAKE) -f CMakeFiles/matrix_transform.dir/build.make CMakeFiles/matrix_transform.dir/src/matrix_transform.cpp.s
-.PHONY : src/matrix_transform.cpp.s
+src/HowFeaturesWork.cpp.s:
+	$(MAKE) -f CMakeFiles/HowFeaturesWork.dir/build.make CMakeFiles/HowFeaturesWork.dir/src/HowFeaturesWork.cpp.s
+.PHONY : src/HowFeaturesWork.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... matrix_transform"
-	@echo "... src/matrix_transform.o"
-	@echo "... src/matrix_transform.i"
-	@echo "... src/matrix_transform.s"
+	@echo "... HowFeaturesWork"
+	@echo "... src/HowFeaturesWork.o"
+	@echo "... src/HowFeaturesWork.i"
+	@echo "... src/HowFeaturesWork.s"
 .PHONY : help
 
 
