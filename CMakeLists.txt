@@ -17,5 +17,13 @@ add_definitions(${PCL_DEFINITIONS})
 # target_link_libraries (matrix_transform ${PCL_LIBRARIES})
 
 #========================PCD_3D_FEATURES_WORKING_EXAMPLE(NORMAL ESTIMATION)===========================#
-add_executable (HowFeaturesWork src/HowFeaturesWork.cpp)
-target_link_libraries (HowFeaturesWork ${PCL_LIBRARIES})
+# add_executable (HowFeaturesWork src/HowFeaturesWork.cpp)
+# target_link_libraries (HowFeaturesWork ${PCL_LIBRARIES})
+
+#========================PCD_3D_FEATURES_WORKING_EXAMPLE(NORMAL ESTIMATION ON SUBSET OF POINTS)===========================#
+# add_executable (HowFeaturesWork_two src/HowFeaturesWork_two.cpp)
+# target_link_libraries (HowFeaturesWork_two ${PCL_LIBRARIES})
+
+#========================PCD_3D_FEATURES_WORKING_EXAMPLE(NORMAL ESTIMATION ON SURFACE PATCHES)===========================#
+add_executable (HowFeaturesWork_three src/HowFeaturesWork_three.cpp)
+target_link_libraries (HowFeaturesWork_three ${PCL_LIBRARIEShree} )
