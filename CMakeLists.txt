@@ -26,4 +26,4 @@ add_definitions(${PCL_DEFINITIONS})
 
 #========================PCD_3D_FEATURES_WORKING_EXAMPLE(NORMAL ESTIMATION ON SURFACE PATCHES)===========================#
 add_executable (HowFeaturesWork_three src/HowFeaturesWork_three.cpp)
-target_link_libraries (HowFeaturesWork_three ${PCL_LIBRARIEShree} )
+target_link_libraries (HowFeaturesWork_three ${PCL_LIBRARIES})

@@ -13,11 +13,11 @@ int main (int argc, char** argv)
   pcl::io::loadPCDFile ("data/milk.pcd", *cloud);
 
   //Downsampling the point cloud
-   // Create the filtering object
-//   pcl::VoxelGrid<pcl::PointXYZ> sor;
-//   sor.setInputCloud (cloud);
-//   sor.setLeafSize (0.01f, 0.01f, 0.01f);
-//   sor.filter (*cloud_downsampled);
+  //  Create the filtering object
+  pcl::VoxelGrid<pcl::PointXYZ> sor;
+  sor.setInputCloud (cloud);
+  sor.setLeafSize (0.01f, 0.01f, 0.01f);
+  sor.filter (*cloud_downsampled);
 
 
   // Create the normal estimation class, and pass the input dataset to it
@@ -47,11 +47,11 @@ int main (int argc, char** argv)
   pcl::visualization::PCLVisualizer viewer ("How 3D Features work example#2");
 
    // Define R,G,B colors for the point cloud
-  pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> source_cloud_color_handler (cloud, 255, 255, 255);
+  pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> source_cloud_color_handler (cloud_downsampled, 255, 255, 255);
   // We add the point cloud to the viewer and pass the color handler
-  viewer.addPointCloud (cloud, source_cloud_color_handler, "original_cloud");
+  viewer.addPointCloud (cloud_downsampled, source_cloud_color_handler, "original_cloud");
 
-  viewer.addPointCloudNormals<pcl::PointXYZ, pcl::Normal> (cloud, cloud_normals, 10, 0.05, "normals"); //Comment this if you dont want normals in the visualization. 
+  viewer.addPointCloudNormals<pcl::PointXYZ, pcl::Normal> (cloud_downsampled, cloud_normals, 10, 0.05, "normals"); //Comment this if you dont want normals in the visualization. 
 
   viewer.addCoordinateSystem (1.0, "cloud", 0);
   viewer.setBackgroundColor(0.05, 0.05, 0.05, 0); // Setting background to a dark grey
