@@ -31,3 +31,7 @@ EXAMPLE# 4 : Estimating Surface Normals
   computeCovarianceMatrix (cloud, xyz_centroid, covariance_matrix);
   
   Simply, put, this is what happens inside pcl::NormalEstimation:
+
+EXAMPLE# 5 : Estimating Surface Normals using Integral Images
+
+The method(s) here use integral images to get more reliable tangential vectors on area patches around a point to calculate the cross product of the 2 vcctors that would give the normal. While AVERAGE_GRADIENT does this with 6 images i.e, 2 vectors for XY, YZ and ZX and getting the cross product and (as far as my undertanding goes), the resultant of these 3 vectors is thr normal; the AVERAGE_DEPTH_CHANGE mode uses only 1 integral image but uses it in conjunction with exhaustively researched smoothed area maps. Finally, the COVARIANCE MATRIX method computes 9 integral images to form a covariance matrix for a given point whose eigenvector would give the normal. 
