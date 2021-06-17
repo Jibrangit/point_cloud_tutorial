@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/jibran/pcl_tutorials/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/NormalsIntegralImages.dir/all
 all: CMakeFiles/HowFeaturesWork_three.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/NormalsIntegralImages.dir/clean
 clean: CMakeFiles/HowFeaturesWork_three.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NormalsIntegralImages.dir
+
+# All Build rule for target.
+CMakeFiles/NormalsIntegralImages.dir/all:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/depend
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jibran/pcl_tutorials/build/CMakeFiles --progress-num=3,4 "Built target NormalsIntegralImages"
+.PHONY : CMakeFiles/NormalsIntegralImages.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NormalsIntegralImages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jibran/pcl_tutorials/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NormalsIntegralImages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jibran/pcl_tutorials/build/CMakeFiles 0
+.PHONY : CMakeFiles/NormalsIntegralImages.dir/rule
+
+# Convenience name for target.
+NormalsIntegralImages: CMakeFiles/NormalsIntegralImages.dir/rule
+
+.PHONY : NormalsIntegralImages
+
+# clean rule for target.
+CMakeFiles/NormalsIntegralImages.dir/clean:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/clean
+.PHONY : CMakeFiles/NormalsIntegralImages.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/HowFeaturesWork_three.dir

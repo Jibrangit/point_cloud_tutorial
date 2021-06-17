@@ -1,3 +1,4 @@
 /home/jibran/pcl_tutorials/build/CMakeFiles/rebuild_cache.dir
 /home/jibran/pcl_tutorials/build/CMakeFiles/edit_cache.dir
+/home/jibran/pcl_tutorials/build/CMakeFiles/NormalsIntegralImages.dir
 /home/jibran/pcl_tutorials/build/CMakeFiles/HowFeaturesWork_three.dir

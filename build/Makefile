@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named NormalsIntegralImages
+
+# Build rule for target.
+NormalsIntegralImages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NormalsIntegralImages
+.PHONY : NormalsIntegralImages
+
+# fast build rule for target.
+NormalsIntegralImages/fast:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/build
+.PHONY : NormalsIntegralImages/fast
+
+#=============================================================================
 # Target rules for targets named HowFeaturesWork_three
 
 # Build rule for target.
@@ -150,6 +163,33 @@ src/HowFeaturesWork_three.cpp.s:
 	$(MAKE) -f CMakeFiles/HowFeaturesWork_three.dir/build.make CMakeFiles/HowFeaturesWork_three.dir/src/HowFeaturesWork_three.cpp.s
 .PHONY : src/HowFeaturesWork_three.cpp.s
 
+src/NormalsIntegralImages.o: src/NormalsIntegralImages.cpp.o
+
+.PHONY : src/NormalsIntegralImages.o
+
+# target to build an object file
+src/NormalsIntegralImages.cpp.o:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.o
+.PHONY : src/NormalsIntegralImages.cpp.o
+
+src/NormalsIntegralImages.i: src/NormalsIntegralImages.cpp.i
+
+.PHONY : src/NormalsIntegralImages.i
+
+# target to preprocess a source file
+src/NormalsIntegralImages.cpp.i:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.i
+.PHONY : src/NormalsIntegralImages.cpp.i
+
+src/NormalsIntegralImages.s: src/NormalsIntegralImages.cpp.s
+
+.PHONY : src/NormalsIntegralImages.s
+
+# target to generate assembly for a file
+src/NormalsIntegralImages.cpp.s:
+	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.s
+.PHONY : src/NormalsIntegralImages.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... NormalsIntegralImages"
 	@echo "... HowFeaturesWork_three"
 	@echo "... src/HowFeaturesWork_three.o"
 	@echo "... src/HowFeaturesWork_three.i"
 	@echo "... src/HowFeaturesWork_three.s"
+	@echo "... src/NormalsIntegralImages.o"
+	@echo "... src/NormalsIntegralImages.i"
+	@echo "... src/NormalsIntegralImages.s"
 .PHONY : help
 
 
