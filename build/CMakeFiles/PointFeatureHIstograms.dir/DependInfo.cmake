@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jibran/pcl_tutorials/src/pcl_write.cpp" "/home/jibran/pcl_tutorials/build/CMakeFiles/pcd_write_test.dir/src/pcl_write.cpp.o"
+  "/home/jibran/pcl_tutorials/src/PointFeatureHIstograms.cpp" "/home/jibran/pcl_tutorials/build/CMakeFiles/PointFeatureHIstograms.dir/src/PointFeatureHIstograms.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

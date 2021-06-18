@@ -15,7 +15,7 @@ main ()
     pcl::PointCloud<pcl::Normal>::Ptr normals (new pcl::PointCloud<pcl::Normal>);
 
     pcl::IntegralImageNormalEstimation<pcl::PointXYZ, pcl::Normal> ne;
-    ne.setNormalEstimationMethod (ne.COVARIANCE_MATRIX);
+    ne.setNormalEstimationMethod (ne.COVARIANCE_MATRIX);     //Can set 3 modes here: (1) COVARIANCE_MATRIX, (2) AVERAGE_3D_GRADIENT, (3) AVERAGE_DEPTH_CHANGE
     ne.setMaxDepthChangeFactor(0.02f);
     ne.setNormalSmoothingSize(10.0f);
     ne.setInputCloud(cloud);

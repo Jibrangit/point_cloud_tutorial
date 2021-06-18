@@ -119,6 +119,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/NormalsIntegralImages.dir/DependInfo.cmake"
-  "CMakeFiles/HowFeaturesWork_three.dir/DependInfo.cmake"
+  "CMakeFiles/PointFeatureHIstograms.dir/DependInfo.cmake"
   )

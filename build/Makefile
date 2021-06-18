@@ -111,84 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named NormalsIntegralImages
+# Target rules for targets named PointFeatureHIstograms
 
 # Build rule for target.
-NormalsIntegralImages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 NormalsIntegralImages
-.PHONY : NormalsIntegralImages
+PointFeatureHIstograms: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PointFeatureHIstograms
+.PHONY : PointFeatureHIstograms
 
 # fast build rule for target.
-NormalsIntegralImages/fast:
-	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/build
-.PHONY : NormalsIntegralImages/fast
+PointFeatureHIstograms/fast:
+	$(MAKE) -f CMakeFiles/PointFeatureHIstograms.dir/build.make CMakeFiles/PointFeatureHIstograms.dir/build
+.PHONY : PointFeatureHIstograms/fast
 
-#=============================================================================
-# Target rules for targets named HowFeaturesWork_three
+src/PointFeatureHIstograms.o: src/PointFeatureHIstograms.cpp.o
 
-# Build rule for target.
-HowFeaturesWork_three: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HowFeaturesWork_three
-.PHONY : HowFeaturesWork_three
-
-# fast build rule for target.
-HowFeaturesWork_three/fast:
-	$(MAKE) -f CMakeFiles/HowFeaturesWork_three.dir/build.make CMakeFiles/HowFeaturesWork_three.dir/build
-.PHONY : HowFeaturesWork_three/fast
-
-src/HowFeaturesWork_three.o: src/HowFeaturesWork_three.cpp.o
-
-.PHONY : src/HowFeaturesWork_three.o
+.PHONY : src/PointFeatureHIstograms.o
 
 # target to build an object file
-src/HowFeaturesWork_three.cpp.o:
-	$(MAKE) -f CMakeFiles/HowFeaturesWork_three.dir/build.make CMakeFiles/HowFeaturesWork_three.dir/src/HowFeaturesWork_three.cpp.o
-.PHONY : src/HowFeaturesWork_three.cpp.o
+src/PointFeatureHIstograms.cpp.o:
+	$(MAKE) -f CMakeFiles/PointFeatureHIstograms.dir/build.make CMakeFiles/PointFeatureHIstograms.dir/src/PointFeatureHIstograms.cpp.o
+.PHONY : src/PointFeatureHIstograms.cpp.o
 
-src/HowFeaturesWork_three.i: src/HowFeaturesWork_three.cpp.i
+src/PointFeatureHIstograms.i: src/PointFeatureHIstograms.cpp.i
 
-.PHONY : src/HowFeaturesWork_three.i
-
-# target to preprocess a source file
-src/HowFeaturesWork_three.cpp.i:
-	$(MAKE) -f CMakeFiles/HowFeaturesWork_three.dir/build.make CMakeFiles/HowFeaturesWork_three.dir/src/HowFeaturesWork_three.cpp.i
-.PHONY : src/HowFeaturesWork_three.cpp.i
-
-src/HowFeaturesWork_three.s: src/HowFeaturesWork_three.cpp.s
-
-.PHONY : src/HowFeaturesWork_three.s
-
-# target to generate assembly for a file
-src/HowFeaturesWork_three.cpp.s:
-	$(MAKE) -f CMakeFiles/HowFeaturesWork_three.dir/build.make CMakeFiles/HowFeaturesWork_three.dir/src/HowFeaturesWork_three.cpp.s
-.PHONY : src/HowFeaturesWork_three.cpp.s
-
-src/NormalsIntegralImages.o: src/NormalsIntegralImages.cpp.o
-
-.PHONY : src/NormalsIntegralImages.o
-
-# target to build an object file
-src/NormalsIntegralImages.cpp.o:
-	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.o
-.PHONY : src/NormalsIntegralImages.cpp.o
-
-src/NormalsIntegralImages.i: src/NormalsIntegralImages.cpp.i
-
-.PHONY : src/NormalsIntegralImages.i
+.PHONY : src/PointFeatureHIstograms.i
 
 # target to preprocess a source file
-src/NormalsIntegralImages.cpp.i:
-	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.i
-.PHONY : src/NormalsIntegralImages.cpp.i
+src/PointFeatureHIstograms.cpp.i:
+	$(MAKE) -f CMakeFiles/PointFeatureHIstograms.dir/build.make CMakeFiles/PointFeatureHIstograms.dir/src/PointFeatureHIstograms.cpp.i
+.PHONY : src/PointFeatureHIstograms.cpp.i
 
-src/NormalsIntegralImages.s: src/NormalsIntegralImages.cpp.s
+src/PointFeatureHIstograms.s: src/PointFeatureHIstograms.cpp.s
 
-.PHONY : src/NormalsIntegralImages.s
+.PHONY : src/PointFeatureHIstograms.s
 
 # target to generate assembly for a file
-src/NormalsIntegralImages.cpp.s:
-	$(MAKE) -f CMakeFiles/NormalsIntegralImages.dir/build.make CMakeFiles/NormalsIntegralImages.dir/src/NormalsIntegralImages.cpp.s
-.PHONY : src/NormalsIntegralImages.cpp.s
+src/PointFeatureHIstograms.cpp.s:
+	$(MAKE) -f CMakeFiles/PointFeatureHIstograms.dir/build.make CMakeFiles/PointFeatureHIstograms.dir/src/PointFeatureHIstograms.cpp.s
+.PHONY : src/PointFeatureHIstograms.cpp.s
 
 # Help Target
 help:
@@ -198,14 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... NormalsIntegralImages"
-	@echo "... HowFeaturesWork_three"
-	@echo "... src/HowFeaturesWork_three.o"
-	@echo "... src/HowFeaturesWork_three.i"
-	@echo "... src/HowFeaturesWork_three.s"
-	@echo "... src/NormalsIntegralImages.o"
-	@echo "... src/NormalsIntegralImages.i"
-	@echo "... src/NormalsIntegralImages.s"
+	@echo "... PointFeatureHIstograms"
+	@echo "... src/PointFeatureHIstograms.o"
+	@echo "... src/PointFeatureHIstograms.i"
+	@echo "... src/PointFeatureHIstograms.s"
 .PHONY : help
 
 

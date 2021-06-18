@@ -14,8 +14,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -30,8 +29,7 @@
 					"name" : "PCL_TUTORIALS",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -39,16 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "HowFeaturesWork_three::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HowFeaturesWork_three-e1bf1dcf3b5fd014132b.json",
-					"name" : "HowFeaturesWork_three",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "NormalsIntegralImages::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-NormalsIntegralImages-b61a50c743960cc610d3.json",
-					"name" : "NormalsIntegralImages",
+					"id" : "PointFeatureHIstograms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PointFeatureHIstograms-90bb06b1e788b7016472.json",
+					"name" : "PointFeatureHIstograms",
 					"projectIndex" : 0
 				}
 			]

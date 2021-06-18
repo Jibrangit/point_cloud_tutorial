@@ -9,8 +9,8 @@ add_definitions(${PCL_DEFINITIONS})
 #Uncomment those files that you need to build and use
 
 #========================PCD_WRITE_EXAMPLE===========================#
-# add_executable(pcd_write_test src/pcl_write.cpp)
-# target_link_libraries(pcd_write_test ${PCL_LIBRARIES})
+#add_executable(pcd_write_test src/pcl_write.cpp)
+#target_link_libraries(pcd_write_test ${PCL_LIBRARIES})
 
 #========================PCD_TRANSFORM_EXAMPLE===========================#
 # add_executable (matrix_transform src/matrix_transform.cpp)
@@ -25,9 +25,13 @@ add_definitions(${PCL_DEFINITIONS})
 # target_link_libraries (HowFeaturesWork_two ${PCL_LIBRARIES})
 
 #========================PCD_3D_FEATURES_WORKING_EXAMPLE(NORMAL ESTIMATION ON SURFACE PATCHES)===========================#
-add_executable (HowFeaturesWork_three src/HowFeaturesWork_three.cpp)
-target_link_libraries (HowFeaturesWork_three ${PCL_LIBRARIES})
+#add_executable (HowFeaturesWork_three src/HowFeaturesWork_three.cpp)
+#target_link_libraries (HowFeaturesWork_three ${PCL_LIBRARIES})
 
 #========================NORMAL ESTIMATION USING INTEGRAL IMAGES===========================#
-add_executable (NormalsIntegralImages src/NormalsIntegralImages.cpp)
-target_link_libraries (NormalsIntegralImages ${PCL_LIBRARIES})
+#add_executable (NormalsIntegralImages src/NormalsIntegralImages.cpp)
+#target_link_libraries (NormalsIntegralImages ${PCL_LIBRARIES})
+
+#========================POINT FEATURE HISTOGRAMS===========================#
+add_executable (PointFeatureHIstograms src/PointFeatureHIstograms.cpp)
+target_link_libraries (PointFeatureHIstograms ${PCL_LIBRARIES})
